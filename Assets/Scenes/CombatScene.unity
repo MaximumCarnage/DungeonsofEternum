@@ -410,8 +410,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 162327684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1675687962}
@@ -445,7 +445,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 219713648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.13, y: -1.88, z: 0}
+  m_LocalPosition: {x: -4.13, y: -0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 589058867}
@@ -531,7 +531,7 @@ GameObject:
   - component: {fileID: 511491671}
   - component: {fileID: 511491670}
   m_Layer: 5
-  m_Name: KnightPort (1)
+  m_Name: GunWomanPort
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -574,7 +574,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6abacb92af5f1b943a470476df86a148, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c24c86fdb194d3b4b860bb2398c981db, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -688,7 +688,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 573478179}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.13, y: 2.63, z: 0}
+  m_LocalPosition: {x: -4.88, y: 2.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 589058867}
@@ -715,8 +715,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 589058866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 573478180}
@@ -4382,7 +4382,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1715695848}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.13, y: 0, z: 0}
+  m_LocalPosition: {x: -3.75, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 589058867}
@@ -4525,7 +4525,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1737235558}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1854377644}
+        m_MethodName: AttackButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1754289871
@@ -4565,6 +4576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1854377645}
   - component: {fileID: 1854377644}
+  - component: {fileID: 1854377646}
   m_Layer: 0
   m_Name: CombatManager
   m_TagString: Untagged
@@ -4591,6 +4603,23 @@ MonoBehaviour:
     type: 2}
   go_ArcherPrefab: {fileID: 1109171563397528, guid: f35a347215910be4a8ddf3d1b1986fe6,
     type: 2}
+  go_MagePrefab: {fileID: 1952115116359532, guid: f184dcc9f6881f84fa92446529025b25,
+    type: 2}
+  go_KnightPrefab: {fileID: 1944631223423884, guid: cce60017c3c55b14ca27790e2a2b5330,
+    type: 2}
+  go_GunWomanPrefab: {fileID: 1541533326402776, guid: 809c1efffa53c0e40b8b26deb2d69c37,
+    type: 2}
+  go_MagePort: {fileID: 1207598727}
+  go_GunWomanPort: {fileID: 511491668}
+  go_KnightPort: {fileID: 1623372980}
+  go_MageImpact: {fileID: 1220906226649156, guid: 38b61529a159bf74fac41aa5881f9436,
+    type: 2}
+  go_SwordImpact: {fileID: 1074105939510908, guid: 92157dadc7558e5499bab8cdf938ebd1,
+    type: 2}
+  go_GunImpact: {fileID: 1935678562518696, guid: a0806fe451002fb4aa0107f41075fd6a,
+    type: 2}
+  SelectedChar: {fileID: 0}
+  attackMode: 0
   EnemySpawns:
   - {fileID: 1675687961}
   - {fileID: 2004511487}
@@ -4598,6 +4627,12 @@ MonoBehaviour:
   - {fileID: 1754289871}
   - {fileID: 1717459467}
   - {fileID: 815931599}
+  HeroSpawns:
+  - {fileID: 573478179}
+  - {fileID: 1715695848}
+  - {fileID: 219713648}
+  MovingChar: 0
+  canWalk: 0
 --- !u!4 &1854377645
 Transform:
   m_ObjectHideFlags: 0
@@ -4611,6 +4646,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1854377646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1854377643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d64b1fb01a4d67489cec30b59cb235e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1897719521
 GameObject:
   m_ObjectHideFlags: 0

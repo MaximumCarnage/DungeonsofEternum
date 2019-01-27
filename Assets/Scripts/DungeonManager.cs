@@ -9,6 +9,7 @@ public class DungeonManager : MonoBehaviour {
     public string enemyType;
 	public int enemyNumber;
     
+    public Inventories InventorySystem;
    
     public static DungeonManager instance = null;              
 
@@ -21,6 +22,9 @@ public class DungeonManager : MonoBehaviour {
             Destroy(gameObject);    
             
             DontDestroyOnLoad(gameObject);
+
+           
+            InventorySystem.HeroInventory = new List<string>{"Knight","Mage","GunWoman"};
         }
 		public void BattleBegin(string enemy,int num){
             enemyType = enemy;
@@ -28,6 +32,7 @@ public class DungeonManager : MonoBehaviour {
             go_Clash.SetActive(true);
             go_Heroes.SetActive(true);
             go_Fire.SetActive(true);
+
             if(enemy == "Sword"){
                 go_SkelePortrait.SetActive(true);
             }

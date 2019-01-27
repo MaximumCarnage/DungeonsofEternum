@@ -36,9 +36,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4818322637861142}
+  - component: {fileID: 61946175871523668}
   m_Layer: 0
   m_Name: ChiefSkele
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,13 +64,38 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1577744002202928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.11, y: 2.61, z: 0}
+  m_LocalPosition: {x: -3.6215215, y: -0.686533, z: 6.500188}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4785298294188464}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61946175871523668
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1577744002202928}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.010911584, y: -0.21906602}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.95552325, y: 1.2062147}
+  m_EdgeRadius: 0
 --- !u!95 &95949789189248172
 Animator:
   serializedVersion: 3
